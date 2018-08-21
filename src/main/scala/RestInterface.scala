@@ -5,9 +5,14 @@ import resources.TensorFlowResources
 import service.ImageService
 
 trait RestInterface extends Resources with MyImplicitExceptionHandler{
+  println("RestInterface being initialized")
+  // This doesn't have definition, so until Main hits the below line
+  // > implicit val executionContext = system.dispatcher
+  // this is left null
   implicit def executionContext: ExecutionContext
 
-  lazy val imService = new ImageService
+  //This is where declared imageService from TensorFlowResource is now being initialized.
+  lazy val imageService = new ImageService
   val routes: Route =  imageRoutes
 }
 
