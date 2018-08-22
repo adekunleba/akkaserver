@@ -2,7 +2,7 @@ package resources
 
 import akka.http.scaladsl.server.Route
 import akka.http.scaladsl.unmarshalling.{MultipartUnmarshallers, Unmarshaller}
-import db.ImageModel
+import db.RedisService
 import entities.Image
 import routing.MyResource
 import service.ImageService
@@ -26,7 +26,7 @@ trait TensorFlowResources extends MyResource {
   //val imageService: ImageService
   // ... is called beofore the following line inside Main
   //  > implicit val executionContext = system.dispatcher
-  val imageModelService : ImageModel
+  val redisModelService : RedisService
 
   def imageRoutes: Route = pathPrefix("images") {
     pathEnd {
@@ -35,7 +35,7 @@ trait TensorFlowResources extends MyResource {
           //println(s"imageService = $imageService")
           println(s"image = $image")
           completeWithLocationHeader(
-            resourceId = imageModelService.set(image),
+            resourceId = redisModelService.set(image),
             //resourceId = imageService.createEntity(image),
             ifDefinedStatus = 201, ifEmptyStatus = 409
           )
@@ -45,7 +45,7 @@ trait TensorFlowResources extends MyResource {
       path(Segment) { id =>
         println(id)
         get {
-          complete(imageModelService.getEntity(id))
+          complete(redisModelService.getEntity(id))
         }
       }
     }

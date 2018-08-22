@@ -5,7 +5,7 @@ import entities.Image
 import scala.concurrent.{ExecutionContext, Future}
 
 
-class ImageModel(implicit val executionContext: ExecutionContext) extends RedisModel {
+class RedisService(implicit val executionContext: ExecutionContext) extends RedisModel {
 
   //Initiate connection with DB
   val client = new RedisClient("localhost", 6379)
@@ -27,12 +27,12 @@ class ImageModel(implicit val executionContext: ExecutionContext) extends RedisM
 
    def get(id: String): Option[String] =  client.get(id)
 
-
+  /***
+    * Helper function to get data from Redis Database
+    * @param id
+    * @return
+    */
   def getEntity(id: String) :Future[Option[Image]] = Future {
-
-//    val result:String = get(id).getOrElse("Not Found")
-//      case Some(i) =>  i.map(_.toString)
-//      case _ => "Not Found"
    Some(Image(id, get(id).getOrElse("Not Found")))
     }
   }
