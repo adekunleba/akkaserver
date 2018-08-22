@@ -25,19 +25,3 @@ object Main extends App with RestInterface {
     println(s"REST interface could not bind to localhost", ex.getMessage)
   }
 }
-
-//class Something
-//
-//trait MyParentTrait {
-//  val something = new Something
-//}
-//
-//trait MyTrait extends MyParentTrait{
-//
-//}
-//
-//object MyTrait extends MyParentTrait
-//
-//object Main extends App with MyTrait {
-//  println(something)
-//}

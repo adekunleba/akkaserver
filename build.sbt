@@ -25,5 +25,7 @@ lazy val root = (project in file(".")).
       "org.json4s"        %% "json4s-native"   % Json4sVersion,
       "org.json4s"        %% "json4s-ext"      % Json4sVersion,
       "de.heikoseeberger" %% "akka-http-json4s" % "1.16.0",
+      "net.debasishg"     %% "redisclient"      % "3.7",
+      "org.scala-lang" % "scala-actors" % "2.11.9"
     )
   )
