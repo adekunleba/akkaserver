@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8676ef-d23f-4304-9124-d49746c49abe" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/RestInterface.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/RestInterface.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/db/RedisModel.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/db/RedisModel.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/db/RedisService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/db/RedisService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/entities/Image.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/entities/SimpleObject.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/resources/TensorFlowResources.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/resources/ResourceHandler.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/serializer/ImageJsonSupport.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/serializer/ImageJsonSupport.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/serializer/JsonSupport.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/serializer/JsonSupport.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,12 +70,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="276">
-                <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+                <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -113,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="621">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -759,25 +751,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="276">
-            <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
