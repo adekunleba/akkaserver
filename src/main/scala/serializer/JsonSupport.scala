@@ -2,7 +2,7 @@ package serializer
 
 import java.text.SimpleDateFormat
 
-import entities.Image
+import entities.SimpleObject
 import serializer.CustomSerializers
 import de.heikoseeberger.akkahttpjson4s.Json4sSupport
 import org.json4s.ext.JodaTimeSerializers
