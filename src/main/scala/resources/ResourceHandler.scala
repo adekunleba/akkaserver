@@ -3,19 +3,19 @@ package resources
 import akka.http.scaladsl.server.Route
 import akka.http.scaladsl.unmarshalling.{MultipartUnmarshallers, Unmarshaller}
 import db.RedisService
-import entities.Image
+import entities.SimpleObject
 import routing.MyResource
 
 
-trait TensorFlowResources extends MyResource {
-  println("TensorFlowResources being initialized")
+trait ResourceHandler extends MyResource {
+  println("ResourceHandler being initialized")
 
   val redisModelService : RedisService
 
-  def imageRoutes: Route = pathPrefix("images") {
+  def someRoutes: Route = pathPrefix("sampleroute") {
     pathEnd {
       post {
-        entity(as[Image]) { image =>
+        entity(as[SimpleObject]) { image =>
           completeWithLocationHeader(
             resourceId = redisModelService.set(image),
             ifDefinedStatus = 201, ifEmptyStatus = 409
